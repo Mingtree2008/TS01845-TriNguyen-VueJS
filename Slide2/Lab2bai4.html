@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Thông tin đăng ký/đăng nhập
+    </button>
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-xl"> <!-- rộng hơn -->
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Đăng ký/Đăng nhập</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+
+                   <ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-bs-toggle="tab" href="#home">Đăng ký</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-bs-toggle="tab" href="#contact">Đăng nhập</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="home" class="container tab-pane active"><br>
+<div class="col-md-8">
+                        <div class="border p-3 rounded">
+                            <h5 class="fw-bold">Form Đăng Ký Thông Tin</h5>
+
+                            <div class="mb-2">
+                                <label class="form-label">Họ và Tên</label>
+                                <input type="text" class="form-control" placeholder="Nhập họ và tên">
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Nhập email">
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="form-label">Số Điện Thoại</label>
+                                <input type="text" class="form-control" placeholder="Nhập số điện thoại">
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="form-label">Mật Khẩu</label>
+                                <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="form-label">Xác Nhận Mật Khẩu</label>
+                                <input type="password" class="form-control" placeholder="Xác nhận mật khẩu">
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="form-label me-3">Giới Tính:</label>
+                                <input type="radio" name="gt" class="form-check-input" checked> Nam
+                                <input type="radio" name="gt" class="form-check-input ms-3"> Nữ
+                            </div>
+
+                            <div class="mb-2">
+                                <label class="form-label">Ngôn Ngữ</label>
+                                <select class="form-select">
+                                    <option>Tiếng Việt</option>
+                                    <option>English</option>
+                                </select>
+                            </div>
+
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">
+                                    Tôi đồng ý với các điều khoản và điều kiện
+                                </label>
+                            </div>
+
+                            <button class="btn btn-primary">Đăng Ký</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+            </div>
+</div>
+<div id="contact" class="container tab-pane fade"><br>
+            <div class="col-md-8">
+                <div class="border p-3 rounded">
+                    <h5 class="fw-bold">Form Đăng nhập</h5>
+
+                        <div class="mb-2">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Nhập email">
+                        </div>
+
+                        <div class="mb-3">
+                                <label class="form-label">Mật Khẩu</label>
+                                <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                        </div>
+
+                    <button class="btn btn-primary">Đăng Nhập</button>
+</div>
+</div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
