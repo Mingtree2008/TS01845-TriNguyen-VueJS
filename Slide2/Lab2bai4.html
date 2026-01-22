@@ -13,7 +13,85 @@
         Thông tin đăng ký/đăng nhập
     </button>
 </div>
+<div class="container mt-4">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Board">
+        Bảng
+    </button>
+</div>
 
+<div class="modal fade" id="Board">
+    <div class="modal-dialog modal-xl"> <!-- rộng hơn -->
+        <div class="modal-content">
+            
+            <table class="table table-bordered text-center align-middle">
+        <thead>
+            <tr class="table-warning">
+                <th class="align-middle" rowspan="2">Thành Phần</th>
+                <th colspan="2">Giá Trị</th>
+            </tr>
+            <tr class="table-warning" >
+                <th class="text-start">Khối Lượng</th>
+                <th class="text-start">% DV*</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="text-start">
+                <td>Calories</td>
+                <td>200 kcal</td>
+                <td>20%</td>
+            </tr>
+
+            <tr class="text-start">
+                <td>Chất Béo</td>
+                <td>9 g</td>
+                <td>14%</td>
+            </tr>
+
+            <tr class="text-start">
+                <td>Chất Béo Bão Hòa</td>
+                <td>4 g</td>
+                <td>20%</td>
+            </tr>
+
+            <tr class="text-start">
+                <td>Chất Đạm</td>
+                <td>8 g</td>
+                <td>16%</td>
+            </tr>
+
+            <tr class="text-start">
+                <td>Chất Xơ</td>
+                <td>5 g</td>
+                <td>20%</td>
+            </tr>
+
+            <tr class="text-start">
+                <td rowspan="2">Đường</td>
+                <td>Đường trắng</td>
+                <td>12g</td>
+            </tr>
+             <tr class="text-start">
+                <td>Đường đen</td>
+                <td>10g</td>
+            </tr>
+
+
+            <tr class="text-start">
+                <td rowspan="2" >Vitamin</td>
+                <td>Vitamin C</td>
+                <td>25%</td>
+            </tr>
+
+            <tr class="text-start">
+                <td>Vitamin D</td>
+                <td>10%</td>
+            </tr>
+        </tbody>
+    </table>
+        </div>
+    </div>
+</div>
 <!-- MODAL -->
 <div class="modal fade" id="myModal">
     <div class="modal-dialog modal-xl"> <!-- rộng hơn -->
@@ -37,8 +115,8 @@
 </ul>
 <!-- Tab panes -->
 <div class="tab-content">
-<div id="home" class="container tab-pane active"><br>
-<div class="col-md-8">
+    <div id="home" class="container tab-pane active"><br>
+        <div class="col-md-8">
                         <div class="border p-3 rounded">
                             <h5 class="fw-bold">Form Đăng Ký Thông Tin</h5>
 
@@ -94,7 +172,7 @@
                     <div class="modal-footer">
                 <button class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
             </div>
-</div>
+    </div>
 <div id="contact" class="container tab-pane fade"><br>
             <div class="col-md-8">
                 <div class="border p-3 rounded">
@@ -118,7 +196,7 @@
             </div>
 
         </div>
-    </div>
+</div>
 </div>
 </div>
 </body>
